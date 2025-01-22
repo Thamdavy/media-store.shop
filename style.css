@@ -213,7 +213,7 @@ p em {
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Darker shadow for hover effect */
 }
 
-.custom-product1 h3 {
+.custom-product1 h4 {
     margin-top: 0; /* Remove margin from top of heading */
     font-size: 1rem; /* Slightly larger heading */
     color: rgb(33, 33, 33); /* Darker color for the heading */
@@ -269,7 +269,7 @@ p em {
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Darker shadow for hover effect */
 }
 
-.custom-product2 h3 {
+.custom-product2 h4 {
     margin-top: 0; /* Remove margin from top of heading */
     font-size: 1rem; /* Slightly larger heading */
     color: rgb(33, 33, 33); /* Darker color for the heading */
@@ -303,4 +303,150 @@ p em {
 
 .custom-product2 .btn-buy:hover {
     background-color: rgb(21, 101, 192); /* Darker blue when hovered */
+}
+
+
+/* Third */
+
+.custom-product3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 255, 255); /* Light gray background */
+    color: rgb(0, 0, 0); /* Ensure text is visible on the background */
+    padding: 15px; /* Added padding for better spacing */
+    border-radius: 8px; /* Slightly rounded corners for a softer look */
+    font-size: 1rem; /* Adjust the size as needed */
+    text-align: left; /* Align text to the left */
+    margin-bottom: 20px; /* Increased margin below for better separation */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.custom-product3:hover {
+    background-color: rgb(182, 204, 252); /* Slightly darker background on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Darker shadow for hover effect */
+}
+
+.custom-product3 h3 {
+    margin-top: 0; /* Remove margin from top of heading */
+    font-size: 1rem; /* Slightly larger heading */
+    color: rgb(33, 33, 33); /* Darker color for the heading */
+    font-weight: bold; /* Make the heading bold */
+}
+
+.custom-product3 p {
+    font-size: 1rem; /* Consistent font size for paragraphs */
+    line-height: 1.5; /* Improved line spacing for readability */
+    color: rgb(50, 50, 50); /* Slightly lighter color for the description */
+}
+
+.custom-product3 .price {
+    font-weight: bold; /* Emphasize the price */
+    color: rgb(255, 69, 0); /* Use a standout color for the price */
+    font-size: 1.1rem; /* Slightly larger price text */
+    margin-top: 10px; /* Space between description and price */
+}
+
+.custom-product3 .btn-buy {
+    background-color: rgb(33, 150, 243); /* Blue background for the button */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for better button size */
+    border-radius: 5px; /* Rounded corners for button */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-weight: bold; /* Make button text bold */
+    margin-top: 15px; /* Space between the button and other elements */
+    transition: background-color 0.3s ease; /* Smooth transition for button hover effect */
+}
+
+.custom-product3 .btn-buy:hover {
+    background-color: rgb(21, 101, 192); /* Darker blue when hovered */
+}
+/* New Footer Style */
+.new-footer {
+    background: linear-gradient(to bottom, #222, #333);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    padding: 40px 20px;
+}
+
+.new-footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    color: #ff9800;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    color: #ff9800;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section a {
+    color: #ddd;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-section a:hover {
+    color: #ff9800;
+    text-decoration: underline;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin: 5px 0;
+}
+
+.footer-section li a {
+    text-decoration: none;
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 0.85rem;
+    color: #bbb;
+}
+
+.footer-bottom a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .new-footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
