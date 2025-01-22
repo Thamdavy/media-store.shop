@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+    --background-color-light: #ffffff;
+    --text-color-light: #333333;
+    --header-background-light: #f5f5f5;
+    --background-color-dark: #333333;
+    --text-color-dark: #ffffff;
+    --header-background-dark: #222222;
+    --accent-color: #ff9800;
+}
+
+/* Apply the new font globally */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Updated font */
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--header-background-light);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode .header {
+    background-color: var(--header-background-dark);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+.theme-toggle {
+    cursor: pointer;
+    font-size: 1.2rem;
+    border: none;
+    background: none;
+    color: inherit;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    color: var(--accent-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: inherit;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        cursor: pointer;
+        font-size: 1.5rem;
+        border: none;
+        background: none;
+        color: inherit;
+    }
+}
+
+/* custom-heading  */
+.custom-heading {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 142, 4);
+    color: white; /* Ensure text is visible on the background */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.5rem; /* Adjust the size as needed */
+    text-align: center;
+    margin-bottom: 15px; /* Space below the heading */
+    transition: background-color 0.3s ease;
+}
+
+.custom-heading:hover {
+    background-color: rgb(255, 120, 0); /* Darken on hover */
+}
+
+.container {
+    padding: 20px; /* Padding for the container */
+}
+
+.row {
+    margin-bottom: 20px; /* Space between rows */
+}
+
+p {
+    font-size: 1rem; /* Adjust the paragraph font size */
+    color: #555555; /* Darker text color for readability */
+}
+
+@media (max-width: 768px) {
+    .col-sm-4 {
+        margin-bottom: 20px; /* Space between columns on smaller screens */
+    }
+}
+.custom-heading {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 142, 4);
+    color: white; /* Ensure text is visible on the background */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.5rem; /* Adjust the size as needed */
+    text-align: center;
+    margin-bottom: 15px; /* Space below the heading */
+    transition: background-color 0.3s ease;
+}
+
+.custom-heading:hover {
+    background-color: rgb(255, 120, 0); /* Darken on hover */
+}
+
+.container {
+    padding: 20px; /* Padding for the container */
+}
+
+.row {
+    margin-bottom: 20px; /* Space between rows */
+}
+
+p {
+    font-size: 1rem; /* Standard text size */
+    color: white; /* White text color for contrast */
+    background-color: rgb(91, 139, 244); /* Matching background color as h3 */
+    padding: 10px; /* Padding inside the paragraph */
+    border-radius: 5px; /* Rounded corners for the paragraph */
+    line-height: 1.8; /* Improved line height for readability */
+    margin-bottom: 15px; /* Space between paragraphs */
+    text-align: justify; /* Justify text for a cleaner look */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+p:hover {
+    background-color: rgb(255, 120, 0); /* Darken background color on hover */
+    color: white; /* Keep the text color white on hover */
+}
+
+p strong {
+    font-weight: bold; /* Make bold text stand out */
+}
+
+p em {
+    font-style: italic; /* Make italicized text stand out */
+}
+
+@media (max-width: 768px) {
+    .col-sm-4 {
+        margin-bottom: 20px; /* Space between columns on smaller screens */
+    }
+}
+
+.custom-product1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 255, 255); /* Light gray background */
+    color: rgb(0, 0, 0); /* Ensure text is visible on the background */
+    padding: 15px; /* Added padding for better spacing */
+    border-radius: 8px; /* Slightly rounded corners for a softer look */
+    font-size: 1rem; /* Adjust the size as needed */
+    text-align: left; /* Align text to the left */
+    margin-bottom: 20px; /* Increased margin below for better separation */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.custom-product1:hover {
+    background-color: rgb(182, 204, 252); /* Slightly darker background on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Darker shadow for hover effect */
+}
+
+.custom-product1 h3 {
+    margin-top: 0; /* Remove margin from top of heading */
+    font-size: 1rem; /* Slightly larger heading */
+    color: rgb(33, 33, 33); /* Darker color for the heading */
+    font-weight: bold; /* Make the heading bold */
+}
+
+.custom-product1 p {
+    font-size: 1rem; /* Consistent font size for paragraphs */
+    line-height: 1.5; /* Improved line spacing for readability */
+    color: rgb(50, 50, 50); /* Slightly lighter color for the description */
+}
+
+.custom-product1 .price {
+    font-weight: bold; /* Emphasize the price */
+    color: rgb(255, 69, 0); /* Use a standout color for the price */
+    font-size: 1.1rem; /* Slightly larger price text */
+    margin-top: 10px; /* Space between description and price */
+}
+
+.custom-product1 .btn-buy {
+    background-color: rgb(33, 150, 243); /* Blue background for the button */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for better button size */
+    border-radius: 5px; /* Rounded corners for button */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-weight: bold; /* Make button text bold */
+    margin-top: 15px; /* Space between the button and other elements */
+    transition: background-color 0.3s ease; /* Smooth transition for button hover effect */
+}
+
+.custom-product1 .btn-buy:hover {
+    background-color: rgb(21, 101, 192); /* Darker blue when hovered */
+}
+
+/* second */
+
+.custom-product2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 255, 255); /* Light gray background */
+    color: rgb(0, 0, 0); /* Ensure text is visible on the background */
+    padding: 15px; /* Added padding for better spacing */
+    border-radius: 8px; /* Slightly rounded corners for a softer look */
+    font-size: 1rem; /* Adjust the size as needed */
+    text-align: left; /* Align text to the left */
+    margin-bottom: 20px; /* Increased margin below for better separation */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.custom-product2:hover {
+    background-color: rgb(182, 204, 252); /* Slightly darker background on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Darker shadow for hover effect */
+}
+
+.custom-product2 h3 {
+    margin-top: 0; /* Remove margin from top of heading */
+    font-size: 1rem; /* Slightly larger heading */
+    color: rgb(33, 33, 33); /* Darker color for the heading */
+    font-weight: bold; /* Make the heading bold */
+}
+
+.custom-product2 p {
+    font-size: 1rem; /* Consistent font size for paragraphs */
+    line-height: 1.5; /* Improved line spacing for readability */
+    color: rgb(50, 50, 50); /* Slightly lighter color for the description */
+}
+
+.custom-product2 .price {
+    font-weight: bold; /* Emphasize the price */
+    color: rgb(255, 69, 0); /* Use a standout color for the price */
+    font-size: 1.1rem; /* Slightly larger price text */
+    margin-top: 10px; /* Space between description and price */
+}
+
+.custom-product2 .btn-buy {
+    background-color: rgb(33, 150, 243); /* Blue background for the button */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for better button size */
+    border-radius: 5px; /* Rounded corners for button */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-weight: bold; /* Make button text bold */
+    margin-top: 15px; /* Space between the button and other elements */
+    transition: background-color 0.3s ease; /* Smooth transition for button hover effect */
+}
+
+.custom-product2 .btn-buy:hover {
+    background-color: rgb(21, 101, 192); /* Darker blue when hovered */
+}
