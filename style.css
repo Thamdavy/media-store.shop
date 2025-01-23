@@ -363,17 +363,18 @@ p em {
 }
 /* New Footer Style */
 .new-footer {
-    background: linear-gradient(to bottom, #222, #333);
+    background: rgb(182, 204, 252);
     color: #fff;
     font-family: 'Arial', sans-serif;
     padding: 40px 20px;
+    border-radius: 10px;
 }
 
 .new-footer-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     gap: 20px;
 }
