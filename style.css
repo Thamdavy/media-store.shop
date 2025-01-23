@@ -107,6 +107,12 @@ body.dark-mode .header {
     color: rgb(18, 17, 17);
     text-decoration: none;
 }
+.icon-image {
+    width: 20px; /* Set width */
+    height: 20px; /* Set height */
+    vertical-align: middle; /* Align image with text */
+    border-radius: 50%; /* Optional: Make it circular */
+}
 
 .dropdown-menu a:hover {
     background-color: #555;
@@ -117,6 +123,11 @@ body.dark-mode .header {
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+/* Add this CSS for the "show" class when toggling with JavaScript */
+.dropdown-menu.show {
+    display: block;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
