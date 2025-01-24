@@ -60,3 +60,15 @@ document.querySelectorAll('.link-with-icon').forEach(function(link) {
         }
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const currentPath = window.location.pathname.split("/").pop(); // Get the current file name
+    const menuLinks = document.querySelectorAll(".dropdown-item");
+
+    menuLinks.forEach((link) => {
+      const hrefPath = link.getAttribute("href");
+
+      if (hrefPath === currentPath) {
+        link.classList.add("active");
+      }
+    });
+  });

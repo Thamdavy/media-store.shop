@@ -167,6 +167,11 @@ body.dark-mode .header {
 .dropdown-menu .dropdown.active > .dropdown-menu {
     display: block;
 }
+.dropdown-item.active {
+    background-color: #007bff; /* Highlight color */
+    color: white;
+    font-weight: bold;
+  }
 
 
 
