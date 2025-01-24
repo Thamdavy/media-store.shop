@@ -176,8 +176,8 @@ body.dark-mode .header {
         background-color: inherit;
         position: absolute;
         top: 60px;
-        right: 10px;
-        padding: 20px;
+        right: 25px;
+        padding: 5px;
         border-radius: 10px;
         box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
         
