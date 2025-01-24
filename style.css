@@ -128,6 +128,47 @@ body.dark-mode .header {
     display: block;
 }
 
+/* vvvv */
+
+
+/* Basic styles for dropdown menu */
+.dropdown-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.dropdown-menu > .dropdown > .dropdown-menu {
+    display: none; /* Hide submenus by default */
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 0;
+    z-index: 10;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for links */
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Submenu visible when active */
+.dropdown-menu .dropdown.active > .dropdown-menu {
+    display: block;
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
