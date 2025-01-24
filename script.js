@@ -49,3 +49,14 @@ dropdownToggles.forEach(toggle => {
         parentDropdown.classList.toggle('active');
     });
 });
+
+document.querySelectorAll('.link-with-icon').forEach(function(link) {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();  // Prevent default behavior (navigation)
+        let targetUrl = link.getAttribute('href');  // Get the href value
+        console.log("Navigating to: ", targetUrl);  // Log the URL to console for debugging
+        if (targetUrl && targetUrl !== '#') {
+            window.location.href = targetUrl;  // Navigate to the target URL
+        }
+    });
+});
